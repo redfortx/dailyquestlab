@@ -1,0 +1,8 @@
+[
+  {
+    "id": "chal_001",
+    "title": "Find the hidden flag",
+    "description": "Locate the flag file inside the user's home directory.",
+    "points": 50
+  }
+]
