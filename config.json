@@ -2,8 +2,8 @@
   "lab_metadata": {
     "name": "Daily Quest Sample",
     "type": "dailyquest",
-    "avatar_path": "/asset/image/avatar.png",
-    "banner_path": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=600",
+    "avatar_path": "/assets/image/avatar.png",
+    "banner_path": "/assets/image/banner.png",
     "environment": "alpha",
     "mode": "training",
     "difficulty": "medium",
@@ -17,16 +17,16 @@
       "free",
       "pro",
       "admin"
-    ]
-  },
-  "container_config": {
-    "entry_script": "src/scripts/entry.sh",
-    "port": [
+    ],
+    "ports": [
       8080
-    ]
+    ],
+    "custom_entry": true,
+    "entry_script": "src/scripts/entry.sh",
+    "resources": {
+      "memory": 256,
+      "cores": 1
+    }
   },
-  "resources": {
-    "memory": 256,
-    "cores": 1
-  }
+  "expiry": "45M"
 }
